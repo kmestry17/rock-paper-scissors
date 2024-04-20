@@ -34,8 +34,8 @@ function playGame() {
     const userChoice = readlineSync.question('Enter your choice (rock, paper, or scissors): ').toLowerCase();
     
     //check invalid choice
-    if (userChoice != 'rock' || 
-        userChoice != 'paper' ||  
+    if (userChoice != 'rock' && 
+        userChoice != 'paper' &&  
         userChoice != 'scissors') {
             
         console.log('Invalid response!');
